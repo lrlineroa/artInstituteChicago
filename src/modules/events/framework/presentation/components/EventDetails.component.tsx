@@ -16,7 +16,14 @@ const EventDetailsComponent = ({event}: defaultProps) => {
   const {width} = useWindowDimensions();
   return (
     <ScrollView>
-      <Image src={event!.image_url.replace(/\\/g, '')} />
+      <Image
+        style={{
+          width: 400,
+          height: 226,
+          marginTop:12,
+        }}
+        src={event!.image_url.replace(/\\/g, '')}
+      />
       <RenderHtml
         contentWidth={width}
         source={{
