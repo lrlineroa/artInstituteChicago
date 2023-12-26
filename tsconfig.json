@@ -1,0 +1,14 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@navigation": ["./src/navigation/index"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@types": ["./src/types/index"],
+      "@types/*": ["./src/types/*"],
+      "@events/*": ["./src/modules/events/*"]
+    },
+    "moduleResolution": "node"
+  }
+}
